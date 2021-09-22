@@ -80,12 +80,9 @@ c_chet = c[1::2]
 c_nechet = c[::2]
 sr_ar = sum(c_chet)/len(c_chet)
 
-sqrt = 1
-for x in c_nechet:
-    sqrt *= x
 
 # Среднее геометрическое элементов списка 'c', расположенных на нечетных местах
-sr_geom = sqrt**(1/len(c_nechet))
+sr_geom = sqrt(len(c)**(1/len(c_nechet))
 # Максимальный и минимальный элементы
 c_max = max(c)
 c_min = min(c)
